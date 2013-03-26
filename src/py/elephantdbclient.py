@@ -9,7 +9,7 @@ from thrift.transport.TTransport import TTransportException
 from thrift.TSerialization import serialize, deserialize
 import socket
 
-class ElephantDBClient:
+class ElephantDBClient(object):
     def __init__(self, host, port, timeout=None):
         self._host = host
         self._port = port
